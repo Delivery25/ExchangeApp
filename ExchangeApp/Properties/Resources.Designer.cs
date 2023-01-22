@@ -73,6 +73,16 @@ namespace ExchangeApp.Properties {
         /// <summary>
         ///   Поиск локализованного ресурса типа System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap greenArrow {
+            get {
+                object obj = ResourceManager.GetObject("greenArrow", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Поиск локализованного ресурса типа System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap login {
             get {
                 object obj = ResourceManager.GetObject("login", resourceCulture);
@@ -95,6 +105,16 @@ namespace ExchangeApp.Properties {
         internal static string passwordText {
             get {
                 return ResourceManager.GetString("passwordText", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Поиск локализованного ресурса типа System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap redArrow {
+            get {
+                object obj = ResourceManager.GetObject("redArrow", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
             }
         }
         

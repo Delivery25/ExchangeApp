@@ -16,5 +16,10 @@ namespace ExchangeApp
         {
             InitializeComponent();
         }
+
+        private void favoritesDataGridView_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+
+        }
     }
 }

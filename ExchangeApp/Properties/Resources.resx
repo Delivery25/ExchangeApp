@@ -121,6 +121,9 @@
   <data name="about" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\about.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="greenArrow" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\greenArrow.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="login" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\login.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
@@ -129,6 +132,9 @@
   </data>
   <data name="passwordText" xml:space="preserve">
     <value>ANaPjkKqngNGNbi35XAuNp5Ca+q1e8pYZboOSC394nVgRugIorUeBUJovKc3YXZZgQ==</value>
+  </data>
+  <data name="redArrow" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\redArrow.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="saltText" xml:space="preserve">
     <value>1o+OQqqeA0Y1uLflcC42ng==</value>
