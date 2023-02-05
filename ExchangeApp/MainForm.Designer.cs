@@ -96,7 +96,7 @@
             this.MainMenuStrip = this.menuStrip1;
             this.MinimumSize = new System.Drawing.Size(624, 373);
             this.Name = "MainForm";
-            this.Text = "MainForm";
+            this.Text = "Курс валют";
             this.menuStrip1.ResumeLayout(false);
             this.menuStrip1.PerformLayout();
             this.ResumeLayout(false);
