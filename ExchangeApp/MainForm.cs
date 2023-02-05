@@ -1,35 +1,34 @@
-﻿namespace ExchangeApp
+﻿namespace ExchangeApp;
+
+public partial class MainForm : Form
 {
-    public partial class MainForm : Form
+    private Panel oldPanel;
+    private Control oldForm;
+
+    public MainForm()
     {
-        private Panel oldPanel;
-        private Control oldForm;
+        InitializeComponent();
+        SetContentPanel(new LoginForm().loginPanel);
+    }
 
-        public MainForm()
+    public void SetContentPanel(Panel panel)
+    {
+        if (oldPanel != null)
         {
-            InitializeComponent();
-            SetContentPanel(new LoginForm().loginPanel);
+            oldPanel.Parent = oldForm;
         }
+        oldPanel = panel;
+        oldForm = panel.Parent;
+        panel.Parent = mainPanel;
+    }
 
-        private void закрытьToolStripMenuItem_Click(object sender, EventArgs e)
-        {
-            Close();
-        }
+    private void closeMenuItem_Click(object sender, EventArgs e)
+    {
+        Close();
+    }
 
-        private void оПрограммеToolStripMenuItem_Click(object sender, EventArgs e)
-        {
-            SetContentPanel(new AboutForm(oldPanel).aboutPanel);
-        }
-
-        public void SetContentPanel(Panel panel)
-        {
-            if (oldPanel != null)
-            {
-                oldPanel.Parent = oldForm;
-            }
-            oldPanel = panel;
-            oldForm = panel.Parent;
-            panel.Parent = mainPanel;
-        }
+    private void aboutMenuItem_Click(object sender, EventArgs e)
+    {
+        SetContentPanel(new AboutForm(oldPanel).aboutPanel);
     }
 }
