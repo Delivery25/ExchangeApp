@@ -1,4 +1,6 @@
-﻿namespace ExchangeApp
+﻿using System.Windows.Forms;
+
+namespace ExchangeApp
 {
     public partial class AboutForm : Form
     {

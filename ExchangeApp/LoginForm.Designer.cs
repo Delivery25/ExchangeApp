@@ -77,10 +77,11 @@
             // 
             // loginButton
             // 
+            this.loginButton.AllowDrop = true;
             this.loginButton.Location = new System.Drawing.Point(467, 234);
             this.loginButton.Name = "loginButton";
             this.loginButton.Size = new System.Drawing.Size(75, 23);
-            this.loginButton.TabIndex = 4;
+            this.loginButton.TabIndex = 2;
             this.loginButton.Text = "Войти";
             this.loginButton.UseVisualStyleBackColor = true;
             this.loginButton.Click += new System.EventHandler(this.loginButton_Click);
@@ -89,15 +90,16 @@
             // 
             this.passwordTextBox.Location = new System.Drawing.Point(338, 165);
             this.passwordTextBox.Name = "passwordTextBox";
+            this.passwordTextBox.PasswordChar = '*';
             this.passwordTextBox.Size = new System.Drawing.Size(204, 23);
-            this.passwordTextBox.TabIndex = 3;
+            this.passwordTextBox.TabIndex = 1;
             // 
             // loginTextBox
             // 
             this.loginTextBox.Location = new System.Drawing.Point(338, 103);
             this.loginTextBox.Name = "loginTextBox";
             this.loginTextBox.Size = new System.Drawing.Size(204, 23);
-            this.loginTextBox.TabIndex = 2;
+            this.loginTextBox.TabIndex = 0;
             // 
             // welcomLabel
             // 
