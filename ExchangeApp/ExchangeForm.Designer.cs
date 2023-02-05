@@ -38,15 +38,19 @@
             this.Count = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Сourse = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Button = new System.Windows.Forms.DataGridViewButtonColumn();
+            this.statusStrip = new System.Windows.Forms.StatusStrip();
+            this.StatusLabel = new System.Windows.Forms.ToolStripStatusLabel();
             this.exchangePanel.SuspendLayout();
             this.exchangeTabControl.SuspendLayout();
             this.favoritesTabPage.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView)).BeginInit();
+            this.statusStrip.SuspendLayout();
             this.SuspendLayout();
             // 
             // exchangePanel
             // 
             this.exchangePanel.Controls.Add(this.exchangeTabControl);
+            this.exchangePanel.Controls.Add(this.statusStrip);
             this.exchangePanel.Dock = System.Windows.Forms.DockStyle.Fill;
             this.exchangePanel.Location = new System.Drawing.Point(0, 0);
             this.exchangePanel.Name = "exchangePanel";
@@ -61,7 +65,7 @@
             this.exchangeTabControl.Location = new System.Drawing.Point(0, 0);
             this.exchangeTabControl.Name = "exchangeTabControl";
             this.exchangeTabControl.SelectedIndex = 0;
-            this.exchangeTabControl.Size = new System.Drawing.Size(605, 309);
+            this.exchangeTabControl.Size = new System.Drawing.Size(605, 287);
             this.exchangeTabControl.TabIndex = 0;
             this.exchangeTabControl.SelectedIndexChanged += new System.EventHandler(this.exchangeTabControl_SelectedIndexChanged);
             // 
@@ -70,7 +74,7 @@
             this.allTabPage.Location = new System.Drawing.Point(4, 24);
             this.allTabPage.Name = "allTabPage";
             this.allTabPage.Padding = new System.Windows.Forms.Padding(3);
-            this.allTabPage.Size = new System.Drawing.Size(597, 281);
+            this.allTabPage.Size = new System.Drawing.Size(597, 259);
             this.allTabPage.TabIndex = 1;
             this.allTabPage.Text = "Все";
             this.allTabPage.UseVisualStyleBackColor = true;
@@ -81,7 +85,7 @@
             this.favoritesTabPage.Location = new System.Drawing.Point(4, 24);
             this.favoritesTabPage.Name = "favoritesTabPage";
             this.favoritesTabPage.Padding = new System.Windows.Forms.Padding(3);
-            this.favoritesTabPage.Size = new System.Drawing.Size(597, 281);
+            this.favoritesTabPage.Size = new System.Drawing.Size(597, 214);
             this.favoritesTabPage.TabIndex = 0;
             this.favoritesTabPage.Text = "Избранные";
             this.favoritesTabPage.UseVisualStyleBackColor = true;
@@ -104,7 +108,7 @@
             this.dataGridView.ReadOnly = true;
             this.dataGridView.RowTemplate.Height = 25;
             this.dataGridView.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.dataGridView.Size = new System.Drawing.Size(591, 275);
+            this.dataGridView.Size = new System.Drawing.Size(591, 208);
             this.dataGridView.TabIndex = 0;
             this.dataGridView.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView_CellContentClick);
             // 
@@ -156,6 +160,21 @@
             this.Button.UseColumnTextForButtonValue = true;
             this.Button.Width = 20;
             // 
+            // statusStrip
+            // 
+            this.statusStrip.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.StatusLabel});
+            this.statusStrip.Location = new System.Drawing.Point(0, 287);
+            this.statusStrip.Name = "statusStrip";
+            this.statusStrip.Size = new System.Drawing.Size(605, 22);
+            this.statusStrip.TabIndex = 3;
+            this.statusStrip.Text = "fgggggggg";
+            // 
+            // StatusLabel
+            // 
+            this.StatusLabel.Name = "StatusLabel";
+            this.StatusLabel.Size = new System.Drawing.Size(0, 17);
+            // 
             // ExchangeForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
@@ -166,9 +185,12 @@
             this.Name = "ExchangeForm";
             this.Text = "ExchangeForm";
             this.exchangePanel.ResumeLayout(false);
+            this.exchangePanel.PerformLayout();
             this.exchangeTabControl.ResumeLayout(false);
             this.favoritesTabPage.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView)).EndInit();
+            this.statusStrip.ResumeLayout(false);
+            this.statusStrip.PerformLayout();
             this.ResumeLayout(false);
 
         }
@@ -184,5 +206,7 @@
         private DataGridViewTextBoxColumn Count;
         private DataGridViewTextBoxColumn Сourse;
         private DataGridViewButtonColumn Button;
+        public StatusStrip statusStrip;
+        public ToolStripStatusLabel StatusLabel;
     }
 }

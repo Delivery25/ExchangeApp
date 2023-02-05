@@ -13,6 +13,7 @@ public partial class ExchangeForm : Form
     {
         InitializeComponent();
         LoadDataGrid();
+        RefreshStatusStrip();
     }
 
     private void LoadDataGrid()
@@ -108,16 +109,16 @@ public partial class ExchangeForm : Form
             case 1:
                 //удаление из избранного (удаление из бд)
                 context.Favorites.Remove(context.Favorites.First(x => x.Code == code));
+                RefreshStatusStrip();
                 break;
         }
 
         context.SaveChanges();
         LoadFavoriteValute();
-        RefreshStatusStrip();
     }
 
     private void RefreshStatusStrip()
     {
-        (exchangePanel.Parent.Parent as MainForm).statusStrip.Items[0].Text = $@"Курс для {dataGridView.RowCount} валют";
+        statusStrip.Items[0].Text = $@"Курс для {dataGridView.RowCount} валют";
     }
 }

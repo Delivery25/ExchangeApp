@@ -18,8 +18,7 @@
 
         private void оПрограммеToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            SetContentPanel(new AboutForm().aboutPanel);
-            statusStrip.Items[0].Text = "";
+            SetContentPanel(new AboutForm(oldPanel).aboutPanel);
         }
 
         public void SetContentPanel(Panel panel)
